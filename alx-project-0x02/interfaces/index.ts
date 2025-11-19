@@ -8,12 +8,20 @@ export interface CardProps {
   content: string;
 }
 
+
+
 export interface ButtonProps {
   title: string;
-  size?: "small" | "medium" | "large";
-  shape?: "rounded-sm" | "rounded-md" | "rounded-full";
-  className?: string;
-  onClick?: () => void;
+  size: "small" | "medium" | "large";
+  shape: "rounded-sm" | "rounded-md" | "rounded-full";
 }
+
+export interface PostProps {
+  userId: number;
+  title: string;
+  content: string;
+}
+
+
 
 
