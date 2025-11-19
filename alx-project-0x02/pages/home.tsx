@@ -1,15 +1,16 @@
 import React from "react";
-import Card from "@/components/common/Card";
+import Button from "@/components/common/Button";
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <div className="p-10">
-      <h1 className="text-3xl font-bold mb-6">Home Page</h1>
+      <h1 className="text-3xl font-bold mb-6">About Page</h1>
 
-      <Card title="First Card" content="This is the first card content." />
-      <Card title="Second Card" content="This is the second card content." />
+      <div className="flex space-x-4">
+        <Button title="Small Button" size="small" shape="rounded-sm" />
+        <Button title="Medium Button" size="medium" shape="rounded-md" />
+        <Button title="Large Button" size="large" shape="rounded-full" />
+      </div>
     </div>
   );
 }
-
-
