@@ -1,16 +1,18 @@
 import React from "react";
-import Button from "@/components/common/Button";
+import Header from "@/components/layout/Header";
+import Card from "@/components/common/Card";
 
-export default function AboutPage() {
+export default function HomePage() {
   return (
-    <div className="p-10">
-      <h1 className="text-3xl font-bold mb-6">About Page</h1>
+    <div>
+      <Header />
 
-      <div className="flex space-x-4">
-        <Button title="Small Button" size="small" shape="rounded-sm" />
-        <Button title="Medium Button" size="medium" shape="rounded-md" />
-        <Button title="Large Button" size="large" shape="rounded-full" />
+      <div className="p-10">
+        <h1 className="text-3xl font-bold mb-6">Home Page</h1>
+
+        <Card title="Welcome" content="This is the home page content." />
       </div>
     </div>
   );
 }
+
