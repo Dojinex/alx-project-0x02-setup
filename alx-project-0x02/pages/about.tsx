@@ -1,13 +1,17 @@
-import Header from "../components/layout/Header";
+import React from "react";
+import Button from "@/components/common/Button";
 
 export default function AboutPage() {
   return (
-    <div>
-      <Header />
-      <main className="p-8">
-        <h1 className="text-3xl font-bold">About Page</h1>
-        <p className="mt-4 text-lg">This is the About page of your Next.js project.</p>
-      </main>
+    <div className="p-10">
+      <h1 className="text-3xl font-bold mb-6">About Page</h1>
+
+      <div className="flex space-x-4">
+        <Button title="Small Button" size="small" shape="rounded-sm" />
+        <Button title="Medium Button" size="medium" shape="rounded-md" />
+        <Button title="Large Button" size="large" shape="rounded-full" />
+      </div>
     </div>
   );
 }
+
